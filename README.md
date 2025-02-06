@@ -1,5 +1,7 @@
 # Non-Intrusive Ad Generation
 
+<img width="227" alt="image" src="https://github.com/user-attachments/assets/e4f2bfd3-a0d8-4b7c-92eb-9d7fdeb6e695" />
+
 By :
    ### Santhosh Pattamudu Manoharan
    ### Harini Sai Padamata
