@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Upload Video and Logo</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+        .container {
+            width: 400px;
+            margin: 0 auto;
+        }
+        label {
+            display: block;
+            margin: 10px 0;
+        }
+        input[type="file"],
+        input[type="text"] {
+            width: 100%;
+            padding: 10px;
+            margin: 5px 0 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        button {
+            padding: 10px 20px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2>Upload Video and Logo</h2>
+        <form action="/process-video" method="POST" enctype="multipart/form-data">
+            <!-- Video File Input -->
+            <label for="video">Video File:</label>
+            <input type="file" name="video" id="video" required>
+
+            <!-- Video Description -->
+            <label for="video_description">Video Description:</label>
+            <input type="text" name="video_description" id="video_description" placeholder="Enter a description for the video" required>
+
+            <!-- Logo File Input -->
+            <label for="logo">Logo File:</label>
+            <input type="file" name="logo" id="logo" required>
+
+            <!-- Logo Description -->
+            <label for="logo_description">Logo Description:</label>
+            <input type="text" name="logo_description" id="logo_description" placeholder="Enter a description for the logo" required>
+
+            <!-- Submit Button -->
+            <button type="submit">Upload and Process</button>
+        </form>
+    </div>
+</body>
+</html>
